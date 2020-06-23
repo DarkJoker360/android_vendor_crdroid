@@ -33,7 +33,10 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     OmniJaws \
     OmniStyle \
-    Longshot
+    Longshot \
+ifeq ($(TARGET_HAS_ADAPTIVE_SLEEP),true)
+    MatchmakerPrebuilt
+endif
 
 # Fonts
 PRODUCT_PACKAGES += \
